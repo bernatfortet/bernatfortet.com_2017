@@ -776,6 +776,7 @@ a:hover:hover {
   width: 100%;
   position: absolute;
   z-index: 100;
+  padding-top: 60px;
 }
 .main-header.light {
   background: white;
@@ -790,11 +791,21 @@ a:hover:hover {
   opacity: 1;
 }
 .main-header .inner {
+  width: 88%;
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
 }
 .main-header .logo {
-  padding-top: 60px;
   font-size: 28px;
   color: white;
   display: block;
@@ -823,6 +834,43 @@ a:hover:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
   filter: alpha(opacity = (100));
   opacity: 1;
+}
+.main-header .contact {
+  font-size: 20px;
+  color: black;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 100ms;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-property: all;
+  -moz-transition-duration: 100ms;
+  -moz-transition-timing-function: linear;
+  -ms-transition-property: all;
+  -ms-transition-duration: 100ms;
+  -ms-transition-timing-function: linear;
+  -o-transition-property: all;
+  -o-transition-duration: 100ms;
+  -o-transition-timing-function: linear;
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+.main-header .contact:hover {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -webkit-transition-duration: 150ms;
+  -webkit-transition-timing-function: linear;
+  -ms-transition-property: all;
+  -ms-transition-duration: 150ms;
+  -ms-transition-timing-function: linear;
+  -o-transition-property: all;
+  -o-transition-duration: 150ms;
+  -o-transition-timing-function: linear;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+.main-header .contact:hover {
+  color: #0084FF;
 }
 .wrapper {
   margin: 0 auto;
@@ -937,9 +985,8 @@ a:hover:hover {
 }
 .project-item {
   width: 48%;
-  min-height: 400px;
   margin: 1%;
-  padding: 32px 68px;
+  padding: 3% 3%;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1051,7 +1098,7 @@ a:hover:hover {
 }
 .project .project-header {
   width: 100%;
-  padding: 50px 200px 60px;
+  padding: 50px 5% 3%;
   position: relative;
   margin-bottom: 80px;
   -webkit-flex-direction: column;
@@ -1070,7 +1117,7 @@ a:hover:hover {
 .project .project-header .description {
   font-size: 28px;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin: 12px 0 8px;
 }
 .project .project-header .role {
   font-size: 18px;
@@ -1082,9 +1129,13 @@ a:hover:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(60));
   filter: alpha(opacity = (60));
   opacity: 0.6;
+  margin-bottom: 20px;
 }
 .project .project-header .cover {
-  height: 500px;
+  max-height: 500px;
+  max-width: 800px;
+  height: 100%;
+  height: 60vw;
   margin: 20px 12px 0;
 }
 .project .project-header .cover img {
@@ -1215,4 +1266,53 @@ a:hover:hover {
 .row {
   display: flex;
   flex-direction: row;
+}
+@media only screen and (max-width: 1100px) {
+  .projects-list .cover {
+    height: 220px;
+    margin: 35px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .project-item {
+    width: 100%;
+  }
+  .projects-list .cover {
+    margin: 28px;
+  }
+  .main-header {
+    padding-top: 20px;
+  }
+  .project .project-header {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .project .project-content .text {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 0px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px;
+    /* Firefox */
+    column-gap: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project-item {
+    padding: 4%;
+    margin: 3%;
+  }
+  .projects-list .cover {
+    height: 140px;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .projects-list .cover {
+    height: 140px;
+  }
 }
