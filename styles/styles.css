@@ -1301,6 +1301,15 @@ a:hover:hover {
     /* Firefox */
     column-gap: 0px;
   }
+  .main-header .inner {
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
 }
 @media only screen and (max-width: 600px) {
   .project-item {
