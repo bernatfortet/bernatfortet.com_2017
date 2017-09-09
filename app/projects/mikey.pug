@@ -11,17 +11,22 @@ block content
     +project-header( 'Mikey', 'Automated & Personalized Surfing Learning', 'Design & Dev - 2016-17', 'mikey' )
 
     .project-content
-      .text
+      .text.columns
         p Mikey is a personal research project on how to scale personalized learning. The focus of this particular project is to help people learn how to surf by creating automating a conversation experience.
         p Mikey, a bot, chat with the user and offers new pieces of knowledge, videos, tips and feedback on surfing. By understanding the inputs of the user Mikey opens up a new line of learning based on the user questions, preferences and their current skill level.
 
         p Built with: React Native (app), React.js + Electron (admin), , Redux, Firebase (backend)
-
         p Tech Stack: React, React Native, Electron, Firebase
 
       .images.vertical
         +image("projects/mikey/intro", "empty")
         +image("projects/mikey/video", "empty")
+
+      .text.columns
+        p One of the key !ndings was the realization that we’ve become very used to shift the mental context when we switch between conversations. I explored this case to achieve parallel learning "ows as opposed to the academic linear and sequential learning paradigm.
+        p I also discovered that by contextualizing the conversation, the AI could have an easier time understanding what the user is saying. This is because the context helps limit possible scenarios, thus responding more precisely.
+
+      .images.vertical
 
         +image("projects/mikey/conversations", "empty")
         +image("projects/mikey/topic", "empty")

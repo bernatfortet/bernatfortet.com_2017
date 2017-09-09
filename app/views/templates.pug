@@ -26,9 +26,12 @@ mixin project-header( title, description, role, slug)
 
 
 mixin page-meta(title)
-  - var siteName = ' — Bernat Fortet Unanue'
+  - var dash = title != '' ? ' — ' : ''
+  - var siteName = dash+'Bernat Fortet Unanue'
   title= title+siteName
   meta( property="og:title" content=title+siteName )
+  meta( name="twitter:title" content="Bernat Fortet Unanue" )
+
 
 
 mixin image(imageUrl, caption)

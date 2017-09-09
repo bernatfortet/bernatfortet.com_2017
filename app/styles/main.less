@@ -26,6 +26,7 @@ a{ text-decoration:none; color:#188FFF; .anim;
 
 // Helpers
 .round-cutout{ .br(@imgBorderRadius); .ofh; }
+.hCenter{ margin:0 auto; }
 
 
 // Text
@@ -63,7 +64,7 @@ a{ text-decoration:none; color:#188FFF; .anim;
 // Projects List
 //////////////////// ------------------------------
 
-.projects-list{  width:90%; max-width:1440px; margin:0 auto; padding-top:140px; .flex-wrap(wrap);  }
+.projects-list{  width:90%; max-width:1440px; margin:0 auto; padding-top:90px; .flex-wrap(wrap);  }
 
   .project-item, .project-header{.jcc; .aic; .flxCol; background:black;
     .logo{ .jcc; .aic; margin-bottom:4px; }
@@ -132,7 +133,8 @@ a{ text-decoration:none; color:#188FFF; .anim;
       // Blocks
       // .paragraphs{ max-width:1200px;  column-gap:80px; column-count:2; column-rule: 1px solid rgba(0,0,0,0.1); margin:40px 20px; .p; .tal;  }
 
-      .text{ .columns(2, 40px); margin-bottom: 40px;
+      .text{ margin-bottom: 40px;
+        &.columns{ .columns(2, 40px); }
         .title{ .fs(42px); }
         .subtitle{ margin-bottom:32px; }
         p{ margin:0 0 20px; font-size:20px; line-height:36px; color:@black; .op(0.8); }
@@ -157,10 +159,9 @@ a{ text-decoration:none; color:#188FFF; .anim;
         }
       }
 
+      iframe{ .br(6px); .overflow;  }
 
       //
-      // img{ width:100%;  height:auto; .br(6px); .overflow; }
-      // iframe{ .br(6px); .overflow;  }
       //
       //
       // .title{ font-size:26px; line-height:31px; letter-spacing:-0.2px; font-weight:600; color:@main-color; }
