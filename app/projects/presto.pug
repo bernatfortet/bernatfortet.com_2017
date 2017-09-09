@@ -1,0 +1,27 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Presto")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'Presto', 'NBA Messaging Bot', 'Design - 2016', 'presto' )
+
+    .project-content
+      .text
+        p Presto is a messaging bot platform. The first bot is a buddy who knows a ton about the NBA.
+        p I leveraged my expertise in the <a href="./cards.html">cards platform</a>  to provide users with bite-sized information in the form of cards. I also worked on tuning the Ai to have a friendly human personality.
+        p Our audience was teens. Our primary use case was offering video highlights, memes and game stats.
+
+      .images.vertical
+        +image("projects/presto/Device-Presto-Highlights", "empty" )
+        +image("projects/presto/Device-Sports-News", "empty" )
+        +image("projects/presto/Device-Presto-Player-Stats", "empty" )
+        +image("projects/presto/Device-Presto-Player-vs-Player", "empty" )
+        +image("projects/presto/Device-Presto-Team-Stats", "empty" )
+        +image("projects/presto/Device-Presto-Team-vs-Team", "empty" )
+        +image("projects/presto/Device-Sports-Match-Status", "empty" )
+        +image("projects/presto/Device-Sports-Next-Game-Card", "empty" )

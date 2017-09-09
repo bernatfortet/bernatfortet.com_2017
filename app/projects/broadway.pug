@@ -1,0 +1,43 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Broadway")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'Broadway', 'Cards Platform', 'Design - 2015', 'broadway' )
+
+    .project-content
+      .text
+        p Broadway is a design language for Yahoo Content Cards.
+        p I led the design effort for content cards.
+        p We ended designing and building (with proprietary software) more than 80 different types of cards that could adjust and adapt to the simplicity/complexity of the data.
+
+
+      .images.shadow
+        +image("projects/broadway/bway_cards", "empty")
+
+
+      .images
+        +image("projects/broadway/bway_2","Guidelines on card structuring, spacing rules, etc.")
+        +image("projects/broadway/bway_1","Atomic Card styles")
+        +image("projects/broadway/bway_3","Typographical styles")
+        +image("projects/broadway/bway_4","Some of the system components and its rules")
+        //- p
+        //-   strong Some of the Card Design Guidelines
+        //- .row.flxWrap.jcsb
+        //-   .img( style="width:50%" )
+        //-     img(src="images/bway_2.png")
+        //-   .img( style="width:50%" )
+        //-     img(src="images/bway_3.png")
+        //-
+        //- img(src="images/bway_4.png", width="100%")
+        //-
+        //- p
+        //-   strong Some of the cards produced inside the platform
+        //-
+        //- a(href="images/bway_cards.png")
+        //-   img(src="images/bway_cards.png", width="100%")

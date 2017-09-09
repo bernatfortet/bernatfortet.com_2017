@@ -1,0 +1,37 @@
+doctype html
+html(lange="en")
+
+  head
+    block page-meta
+    include meta
+    link( rel="stylesheet" media="screen" href="styles/styles.css")
+
+    script( async src="https://www.googletagmanager.com/gtag/js?id=UA-57016009-1" )
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-57016009-1');
+
+    script( type="application/ld+json").
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://www.your-company-site.com",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+1-401-555-1212",
+          "contactType": "customer service"
+        }]
+      }
+
+  body
+
+    #App
+      include header
+      block content
+      include footer
+
+
+    include scripts

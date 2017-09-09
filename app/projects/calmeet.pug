@@ -1,0 +1,23 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("CalMeet")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'CalMeet', 'Fast 1-on1 Scheduling ', 'Design & Dev - 2017', 'calmeet'  )
+
+    .project-content
+      .text-block
+        .text
+          p CalMeet is a very simple web app that aims to simplify on-demand 1-on-1 scheduling.
+          p This is a personal project, and I worked on every aspect of it. I challenged myself to deepen my understanding of React and build, from scratch, a complete product. Again, as with the Foxie project. Being able to be part of the development allowed design to fourish to a whole new level because of the immediate communication between the two processes.
+
+      .images
+        +image("projects/calmeet/Calmeet_Anonymous", 'Users can use CalMeet without connecting to google')
+        +image("projects/calmeet/Calmeet_Selection", 'When a user connects to google calendar, all the events are visible')
+        +image("projects/calmeet/Calmeet_Logged", "After a user has selected some slots, s/he can copy a link and paste it anywhere")
+        +image("projects/calmeet/Calmeet_Confirmed", "The receiving user has selected one slot and confirmed it. An email has been sent to both users")

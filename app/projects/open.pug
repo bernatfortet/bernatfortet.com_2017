@@ -1,0 +1,27 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Open")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'Open Library', 'Open Source Digital Library', 'Design - 2017', 'open'  )
+
+    .project-content
+      .text
+        p Redesign to make Open Sourece Library "Open Library" responsive and adapted to better visual design and UX standards
+
+      .images.shadow
+        +image('open/book-page', 'Book Screen')
+
+      .images.vertical.shadow
+        +image('open/search-mobile', 'Mobile Search Results')
+        +image('open/book-page-mobile', 'Mobile Book Screen')
+
+      .images.shadow
+        +image("projects/open/types", "List item design for: Books, authors and lists")
+        +image("projects/open/atoms-text", "Basic text styles for mobile and web")
+        +image("projects/open/atoms-buttons", "The basic styles for buttons and actions")

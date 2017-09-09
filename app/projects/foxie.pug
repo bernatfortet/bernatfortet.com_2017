@@ -1,0 +1,27 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Foxie")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'Foxie', "Reading Comprenhension Tutor for Children", 'Design & Dev - 2017', 'foxie' )
+
+    .project-content
+      .text
+        p Foxie is a Reading Comprehension Tutor for young children (8-12).
+        p The goal is to combine a chat-and-voice tutor with a traditional ebook experience.
+        p The tutor helps children by showing how to go about applying different reading techniques. Then, encourages them to reflect about the story with what they have learned.
+
+        p The client didn't have a technical team yet but needed to create a pilot for their idea. I had only 1 week to design and develop the pilot.
+
+        p It's built in React.js, Redux and Firebase as the backend.
+
+      .inner
+        +image("projects/foxie/selection", 'First, children select which book they want to read')
+        +image("projects/foxie/book-cover", 'Then, the tutor talks about the main intention for this reading, and which techniques will be used')
+        +image("projects/foxie/tutoring", 'The tutor makes some observations')
+        +image("projects/foxie/reflection", "Finally, the child can reflect on what is going on the story")

@@ -1,0 +1,90 @@
+include views/templates
+doctype html
+html(lange="en")
+
+  head
+    include views/meta
+
+    //Favicon
+    link( rel="shortcut icon", href="/favicon.ico")
+    link( rel="apple-touch-icon", href="/apple-touch-icon.png")
+
+    link( rel="stylesheet", media="screen", href="styles/styles.css")
+
+
+  body.home
+    header.main-header.light
+      .inner
+        a.logo(href="./") Bernat Fortet Unanue
+
+
+    section.row.projects-list
+
+      +project-item( 'CalMeet', 'Fast 1-on1 Scheduling ', 'Design & Dev - 2017', 'calmeet'  )
+      +project-item( 'Mikey', 'Automated, Personalized Surfing Learning', 'Design & Dev - 2016-17', 'mikey' )
+      +project-item( 'Foxie', "Reading Comprenhension Tutor for Children", 'Design & Dev - 2017', 'foxie' )
+      +project-item( 'Aviate', 'Android Contextual OS/Launcher', 'Design - 2013-14', 'aviate' )
+      +project-item( 'Pillar', "Schools Parents Community", 'Design - 2017', 'pillar' )
+      +project-item( 'Open Library', 'Open Source Digital Library', 'Design - 2017', 'open'  )
+      +project-item( 'Presto', 'NBA Messaging Bot', 'Design - 2016', 'presto' )
+      +project-item( 'Broadway', 'Yahoo Content Cards Platform', 'Design - 2015', 'broadway' )
+
+      +project-item( '', 'Fantasy Soccer Games for TV Show', 'Game Direction - 2013', 'sendokai' )
+      +project-item( '', 'Polar Platformer Game for TV Show', 'Game Direction - 2012', 'laland' )
+        //- +project-item( 'Desafio Champions', 'Web MMO RPG Action Soccer', 'Game Direction - 2012', 'desafio' )
+      //- .hr
+
+      //- .row
+      //-   +project-item-mini( 'Sendokai Champions', 'Soccer Runner', 'Game Direction - 2013', 'sendokai-champions' )
+      //-   +project-item-mini( 'Laland', 'Polar Platformer', 'Game Direction - 2012', 'laland' )
+      //-   +project-item-mini( 'Desafio Champions', 'Web MMO RPG Action Soccer', 'Game Direction - 2012', 'desafio-champions' )
+
+      //- .hr
+      //-
+      //- .row
+      //-   a.card.micro(href="msced.html")
+      //-     .header(style="background-image:url(images/covers/msced.png); background-size:cover;")
+      //-     .content
+      //-       .subtitle
+      //-         | Make Something Cool Every Day
+      //-         br
+      //-         | Graphic Design - 2011
+      //-
+      //-   a.card.micro(href="day9.html")
+      //-     .header(style="background-image:url(images/covers/day9.png); background-size:cover;")
+      //-     .content
+      //-       .subtitle
+      //-         | eSports Brand Design
+      //-         br
+      //-         | 2012
+      //-
+      //-   a.card.micro(href="reel.html")
+      //-     .header(style="background-image:url(images/covers/reel.png); background-size:cover;")
+      //-     .content
+      //-       .subtitle
+      //-         | CG & VFX Design
+      //-         br
+      //-         | 2010-11
+      //-
+      //-
+      //- .row
+      //-   a.card.full(style="background-image:url(images/covers/medium.jpg); background-size:cover;", href="https://medium.com/learning-children-design-technology", target="_blank")
+      //-     .content(style="padding:80px 0;")
+      //-       .title The Future is Our Children
+      //-       .subtitle Writing on Medium
+      //-
+      //- .row
+      //-   a.card.full.tall(style="background-image:url(images/covers/photo.jpg); background-size:cover;", href="https://www.flickr.com/photos/socrattes/albums/72157666089884655", target="_blank")
+      //-     .content
+      //-       .title Wonders In the Midst of the World
+      //-       .subtitle Photography
+
+    //- .password
+    //-   form.input
+    //-     input(placeholder="Insert Password", autofocus)
+    //-     .button Enter
+
+    include views/footer
+
+
+    include views/scripts

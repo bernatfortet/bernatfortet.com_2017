@@ -1,0 +1,49 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Laland")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( '', 'Polar Platformer', 'Game Direction - 2012', 'laland' )
+
+    .project-content
+      .text
+        p Laland: Discovering Lalaxy, is the first videogame for mobile devices in the Laland IP. I was in charge of the production of the game as well as the Game Design and Level Design.
+        p Apart from these main roles, due to the small size of the team, I also lead the art and GUI of the game and took part in programming the level editor.
+        p
+          a(href="http://www.laland-game.com") laland-game.com
+
+        a(href="https://itunes.apple.com/gb/app/laland/id541681776?mt=8")
+          img(src="http://a2.mzstatic.com/eu/r30/Purple/v4/c0/4e/86/c04e8646-2c1e-b5c9-af0a-be9e0a87dd89/icon100x100.jpeg", width="100")
+
+        p Created at
+          a(href="http://www.kotoc.cat/en") Kotoc
+
+
+
+      .inner
+        <iframe width="694" height="390" src="http://www.youtube.com/embed/SXFQ11KQqIw" frameborder="0" allowfullscreen></iframe>
+
+        p
+          strong Level Design
+        .images
+          +image("projects/laland/Planet1_o", "empty")
+          +image("projects/laland/Planet2_o", "empty")
+          +image("projects/laland/Planet3_o", "empty")
+          +image("projects/laland/Planet4_o", "empty")
+          +image("projects/laland/Planet5_o", "empty")
+          +image("projects/laland/GamePlay_o", "empty")
+
+        p
+          strong Level Design Speed up Compilation
+        <iframe src="http://player.vimeo.com/video/52414437?byline=0&portrait=0&badge=0" width="500" height="333" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+        p
+          strong Level Design Sketches
+        .iamges
+          +image("projects/laland/Sketch-04_o", "empty")
+          +image("projects/laland/Sketch-05_o", "empty")

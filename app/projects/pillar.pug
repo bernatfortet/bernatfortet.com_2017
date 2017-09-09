@@ -1,0 +1,33 @@
+extends ../views/layout
+
+block page-meta
+  include ../views/templates
+  +page-meta("Pillar")
+
+block content
+  include ../views/templates
+
+  section.project
+    +project-header( 'Pillar', "Schools Parents Community", 'Design - 2017', 'pillar' )
+
+    .project-content
+      .text
+
+        p Pillar connects parents with other parents in their school Community.
+
+        p The client hadn't had any design work on their app. They needed to execute a redesign and polish onboarding and UX flows. The client also needed design guidelines and sketch symbols to extend the feature of the app on their own after the end of our contract.
+        p Built with Sketch
+
+        a(href="https://itunes.apple.com/us/app/pillar-your-school-community-closely-connected/id1206042915?mt=8")
+          img(src="https://zello.com/img/appstore.png", width="200")
+
+      .images.vertical
+        +image("projects/pillar/Device-Conversations", "Pillar quickly connects to all the parents in your school community" )
+        +image("projects/pillar/Device-Directory", "Users can see all the other families in the school" )
+        +image("projects/pillar/Device-MyFamily", "This is where users edit their family profile" )
+        +image("projects/pillar/Device-FamilyProfile", "When a user explores some other family" )
+
+      .images.three
+        +image("projects/pillar/Device-CreateFamilyMember", 'empty')
+        +image("projects/pillar/Device-FamilyMemberAdult", "Family member creation" )
+        +image("projects/pillar/Device-FamilyMemberChild", 'empty')

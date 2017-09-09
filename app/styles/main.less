@@ -1,0 +1,201 @@
+@import "style-global.less";
+@import "fonts.less";
+
+
+
+
+
+
+//////////////////// ------------------------------
+// Setup
+//////////////////// ------------------------------
+
+body{ font-family:'Circular'; background:white; color:@main-color; margin:0; overflow-x:hidden;}
+
+* { box-sizing: border-box; text-rendering: optimizelegibility; }
+a{ text-decoration:none; color:#188FFF; .anim;
+  &:hover{ text-decoration:none; color:#000; .anim; }
+}
+
+// Variables
+@main-color:#13163D;
+@black:#11132D;
+@secondary-color: fade( #424564, 70%);
+@imgBorderRadius:4px;
+
+// Helpers
+.round-cutout{ .br(@imgBorderRadius); .ofh; }
+
+
+// Text
+.b1{ font-size:15px; line-height:20px; }
+.p{  }
+
+//////////////////// ------------------------------
+// HEADER
+//////////////////// ------------------------------
+
+
+.main-header{ width:100%; .abs; z-index:100;
+  &.light{ background:white;
+    .logo{ color:@black; font-weight:600; .op(1); }
+  }
+  .inner{  max-width:1200px; margin:0 auto;}
+    .logo{ padding-top:60px; font-size:28px; color:white; display:block; font-weight:500; letter-spacing:-0.005em; .op(0.75); }
+    .back{ .rel; bottom:-12px; color: white; .op(0.6); z-index:100;
+      &:hover{ .op(1); }
+    }
+}
+
+
+
+
+.wrapper{ margin:0 auto; width:100%; max-width:1440px; }
+
+.main-footer{  width:88%; max-width:1440px; margin:40px auto 50px; font-size:16px; .op(0.5); }
+
+
+//////////////////// ------------------------------
+// Projects List
+//////////////////// ------------------------------
+
+.projects-list{  width:90%; max-width:1440px; margin:0 auto; padding-top:140px; .flex-wrap(wrap);  }
+
+  .project-item, .project-header{.jcc; .aic; .flxCol; background:black;
+    .logo{ .jcc; .aic; margin-bottom:4px; }
+      .logo-icon{ height:50px; width:50px; margin-right:16px;
+        & img{ width:100%; height:auto; }
+      }
+    .logo-image{
+      .logo-icon{ height:100px; width:160px; }
+    }
+    .cover{ width:100%; height:250px; margin:40px; .flex; .jcc; .aic;
+      .inner{
+        & img{ width:100%; height:auto; }
+      }
+    }
+    .title{ font-size:28px; color:white; font-weight:500;}
+
+    .description{ width:100%; color:white; font-weight:300; margin-top:16px; font-size:20px; .tac; }
+  }
+
+  .project-item{ width:48%; min-height:400px; margin:1%; padding:32px 68px; .br(4px); .anim(200ms); .rel; transform-style: preserve-3d;
+    &:hover .cover{ transform: translateZ(60px);  }
+    .cover{ transform: translateZ(30px);  .anim(400ms, 400ms, ease-out); }
+  }
+
+
+  .calmeet-gradient{ 			.gradient(#FF3A3A, #FF4C3A, #FF4C3A, #FF6D3A)  }
+  .pillar-gradient{ 			.gradient(#5EDCFF, #1BBEFF, #0AA1FF, #007CDB)  }
+  .open-gradient{ 			.gradient(#4BB1FF, #2886FF, #2933FF, #4F2AFF)  }
+  .foxie-gradient{  		.gradient(#FFE152, #FFC624, #FFB224, #FF8D24)  }
+  .mikey-gradient{  		.gradient(#FF6400, #FF8500, #FFBD00, #FFD300) }
+  .aviate-gradient{   	.gradient(#280FA1, #4D1FA6, #8E21AC, #AC219A) }
+  .broadway-gradient{ 	.gradient(#58636A, #454955, #181E32, #0D0D3B) }
+  .presto-gradient{ 		.gradient(#A7FFF4, #28F4F2, #1CBDEA, #179FDB)  }
+  .laland-gradient{ 		background: url('/images/projects/laland/bkg.jpg') no-repeat center center; background-size:cover;  }
+  .sendokai-gradient{ 		background: url('/images/projects/sendokai/bkg.jpg') no-repeat center center; background-size:cover;  }
+
+  .gradient( @color1, @color2, @color3, @color4 ){
+  	background-image:linear-gradient(135deg, @color1 0%, @color2 20%, @color3 80%, @color4 100%);
+  }
+
+
+
+//////////////////// ------------------------------
+// Project Page
+//////////////////// ------------------------------
+
+  .project{ .wrapper;
+
+    .project-header{ width:100%; padding:50px 200px 60px; .rel; margin-bottom:80px; .flxCol;
+      .title{ font-size:50px; font-weight:600; color:white;}
+      .description{ font-size:28px; font-weight:500; margin-bottom:8px;}
+      .role{ font-size:18px; font-weight:300; color:white; .tac; .op(0.6); }
+      .cover{ height:500px; margin:20px 12px 0;
+        img{ width:auto; height:100%; }
+      }
+    }
+
+    .project-content{ width:90%; max-width:1000px; .flxCol; margin:0 auto;
+
+
+
+      // Blocks
+      // .paragraphs{ max-width:1200px;  column-gap:80px; column-count:2; column-rule: 1px solid rgba(0,0,0,0.1); margin:40px 20px; .p; .tal;  }
+
+      .text{ .columns(2, 40px); margin-bottom: 40px;
+        .title{ .fs(42px); }
+        .subtitle{ margin-bottom:32px; }
+        p{ margin:0 0 20px; font-size:20px; line-height:36px; color:@black; .op(0.8); }
+      }
+
+      .images{ width:100%; height:100%; max-width:1000px; margin:20px 0; .flxRow; .flxWrap; .jcc; .aifs;
+        &.vertical .image{ max-width:400px; }
+        &.three .image{ max-width:300px; }
+        &.shadow img{  .bs(0 0 10px 0 rgba(0,0,0,0.1) ); }
+      }
+        .image{ max-width:1200px; width:100%; height:100%; margin:12px 12px 24px;
+          .image-inner{ width:100%; height:auto; .block; .round-cutout; }
+          .photo-caption{ width:80%; margin:8px 0 20px 10%; .rel; .block; color:@black40; font-weight:300;
+            &:before{ content:'↳'; color:@black20; .abs; left:-20px; top:1px; }
+          }
+        }
+
+      .h2{ font-size:36px; margin:32px 0 20px; font-weight:600; letter-spacing:-0.05em}
+
+      .video{ margin:8px;
+        iframe{ width:500px; height:320px; background-color:@black;
+        }
+      }
+
+
+      //
+      // img{ width:100%;  height:auto; .br(6px); .overflow; }
+      // iframe{ .br(6px); .overflow;  }
+      //
+      //
+      // .title{ font-size:26px; line-height:31px; letter-spacing:-0.2px; font-weight:600; color:@main-color; }
+      // .subtitle{ .b1; color:@secondary-color; margin-top:8px; }
+      // p{ .b1; color:@main-color;}
+      //
+      // .hr{ width:100%; height:1px; margin:15px 0 45px; background:#E0E0E0; }
+
+    }
+
+
+
+
+  }
+
+
+
+  .row{ display:flex; flex-direction:row; }
+
+
+
+
+
+//
+// .button{ display:block; .anchor; .anim; text-decoration:none; .tcenter;
+//   &:hover{ .anim; }
+// }
+
+
+
+//////////////////// ------------------------------
+// Responsive
+//////////////////// ------------------------------
+
+// Media queries
+@media only screen
+and (max-width : 800px) {
+
+}
+
+
+// Media queries
+@media only screen
+and (max-width : 400px) {
+
+}
