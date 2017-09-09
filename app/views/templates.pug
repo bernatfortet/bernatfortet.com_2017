@@ -8,7 +8,7 @@ mixin project-item( title, description, secondSubtitle, slug)
       if title != ''
         .title= title
     .cover
-      img.scale(src="images/projects/"+slug+"/cover.png" width='100%' height='auto'  data-scale="best-fit-down" data-align="center")
+      img.scale(src="images/covers/"+slug+".png" width='100%' height='auto'  data-scale="best-fit-down" data-align="center")
     .description= description
 
 mixin project-header( title, description, role, slug)
@@ -19,22 +19,9 @@ mixin project-header( title, description, role, slug)
       if title != ''
         .title= title
     .cover
-      img.scale(src="images/projects/"+slug+"/cover.png" width='100%' height='auto' data-scale="best-fit-down" data-align="center")
+      img.scale(src="images/covers/"+slug+"@2x.png" width='100%' height='auto' data-scale="best-fit-down" data-align="center")
     .description= description
     .role= role
-
-mixin project-item-mini( title, subtitle, secondSubtitle, slug)
-  a.card.mini(href=slug+".html")
-    .header(style="background-image:url(images/"+slug+"/cover.png); background-size:cover;")
-    +project-item-content( title, subtitle, secondSubtitle )
-
-mixin project-item-content( title, subtitle, secondSubtitle)
-  .content
-    .title= title
-    .subtitle
-      span= subtitle
-      br
-      span= secondSubtitle
 
 
 mixin page-meta(title)

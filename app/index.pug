@@ -4,18 +4,14 @@ html(lange="en")
 
   head
     include views/meta
-
-    //Favicon
-    link( rel="shortcut icon", href="/favicon.ico")
-    link( rel="apple-touch-icon", href="/apple-touch-icon.png")
-
-    link( rel="stylesheet", media="screen", href="styles/styles.css")
+    include views/head
 
 
   body.home
     header.main-header.light
       .inner
         a.logo(href="./") Bernat Fortet Unanue
+        a.contact(href="mailto:contact@bernatfortet.com") Get in Touch
 
 
     section.row.projects-list

@@ -142,9 +142,9 @@ module.exports = function (grunt) {
       dist: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
-          cwd: 'dist/',                   // Src matches are relative to this path
+          cwd: 'app/images',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'dist/'                  // Destination path prefix
+          dest: 'dist/images'                  // Destination path prefix
         }]
       }
     },
@@ -162,7 +162,7 @@ module.exports = function (grunt) {
             'CNAME',
             'sitemap.txt',
             '.htaccess',
-            'images/{,*/}*.{webp,gif,jpg,png,svg}'
+            'images/**/{,*/}*.{webp,gif,jpg,png,svg}'
           ]
         }]
       }
