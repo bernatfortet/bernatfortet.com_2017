@@ -853,6 +853,7 @@ a:hover:hover {
   transition-property: all;
   transition-duration: 100ms;
   transition-timing-function: linear;
+  line-height: 43px;
 }
 .main-header .contact:hover {
   -webkit-transition-property: all;
@@ -1280,10 +1281,10 @@ a:hover:hover {
   .projects-list .cover {
     margin: 28px;
   }
-  .main-header {
+  .project-screen .main-header {
     padding-top: 20px;
   }
-  .project .project-header {
+  .project-screen .project .project-header {
     padding-top: 100px;
   }
 }
