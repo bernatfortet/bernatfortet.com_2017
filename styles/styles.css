@@ -1305,7 +1305,7 @@ a:hover:hover {
 @media only screen and (max-width: 600px) {
   .project-item {
     padding: 4%;
-    margin: 1.5%;
+    margin: 3% 0%;
   }
   .projects-list .cover {
     height: 140px;
