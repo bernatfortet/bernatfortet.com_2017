@@ -37,7 +37,7 @@ a{ text-decoration:none; color:#188FFF; .anim;
 //////////////////// ------------------------------
 
 
-.main-header{ width:100%; .abs; z-index:100; padding-top:60px;
+.main-header{ width:100%; .abs; z-index:100; padding:30px 0;
   &.light{ background:white;
     .logo{ color:@black; font-weight:600; .op(1); }
   }
@@ -46,7 +46,7 @@ a{ text-decoration:none; color:#188FFF; .anim;
     .back{ .rel; bottom:-12px; color: white; .op(0.6); z-index:100;
       &:hover{ .op(1); }
     }
-    .contact{ font-size:20px; color:black; .anim;
+    .contact{ font-size:20px; color:black; .anim; line-height:43px;
       &:hover{ color:@blue; }
     }
 }
@@ -70,7 +70,7 @@ a{ text-decoration:none; color:#188FFF; .anim;
       .logo-icon{ height:50px; width:50px; margin-right:16px;
         & img{ width:100%; height:auto; }
       }
-    .logo-image{
+    .logo-image{ margin:-10px 0 -20px 0;
       .logo-icon{ height:100px; width:160px; }
     }
     .cover{ width:100%; height:250px; margin:40px; .flex; .jcc; .aic;
@@ -89,16 +89,18 @@ a{ text-decoration:none; color:#188FFF; .anim;
   }
 
 
-  .calmeet-gradient{ 			.gradient(#FF3A3A, #FF4C3A, #FF4C3A, #FF6D3A)  }
-  .pillar-gradient{ 			.gradient(#5EDCFF, #1BBEFF, #0AA1FF, #007CDB)  }
-  .open-gradient{ 			.gradient(#4BB1FF, #2886FF, #2933FF, #4F2AFF)  }
-  .foxie-gradient{  		.gradient(#FFE152, #FFC624, #FFB224, #FF8D24)  }
-  .mikey-gradient{  		.gradient(#FF6400, #FF8500, #FFBD00, #FFD300) }
-  .aviate-gradient{   	.gradient(#280FA1, #4D1FA6, #8E21AC, #AC219A) }
-  .broadway-gradient{ 	.gradient(#58636A, #454955, #181E32, #0D0D3B) }
-  .presto-gradient{ 		.gradient(#A7FFF4, #28F4F2, #1CBDEA, #179FDB)  }
-  .laland-gradient{ 		background: url('/images/projects/laland/bkg.jpg') no-repeat center center; background-size:cover;  }
-  .sendokai-gradient{ 		background: url('/images/projects/sendokai/bkg.jpg') no-repeat center center; background-size:cover;  }
+  .calmeet-background{ 			.gradient(#FF3A3A, #FF4C3A, #FF4C3A, #FF6D3A)  }
+  .pillar-background{ 			.gradient(#5EDCFF, #1BBEFF, #0AA1FF, #007CDB)  }
+  .open-background{ 			.gradient(#4BB1FF, #2886FF, #2933FF, #4F2AFF)  }
+  .foxie-background{  		.gradient(#FFE152, #FFC624, #FFB224, #FF8D24)  }
+  .mikey-background{  		.gradient(#FF6400, #FF8500, #FFBD00, #FFD300) }
+  .aviate-background{   	.gradient(#280FA1, #4D1FA6, #8E21AC, #AC219A) }
+  .broadway-background{ 	.gradient(#58636A, #454955, #181E32, #0D0D3B) }
+  .presto-background{ 		.gradient(#A7FFF4, #28F4F2, #1CBDEA, #179FDB)  }
+  .laland-background{ 		background: url('/images/projects/laland/bkg.jpg') no-repeat center center; background-size:cover;  }
+  .sendokai-background{ 		background: url('/images/projects/sendokai/bkg.jpg') no-repeat center center; background-size:cover;  }
+  .day9-background{ 	background:#ffa719; }
+  .msced-background{ 	background:#EC5556; }
 
   .gradient( @color1, @color2, @color3, @color4 ){
   	background-image:linear-gradient(135deg, @color1 0%, @color2 20%, @color3 80%, @color4 100%);
@@ -203,18 +205,21 @@ and (max-width : 1100px) {
 and (max-width : 1000px) {
   .project-item{ width:100%; }
   .projects-list .cover{ margin:28px }
-  .main-header{ padding-top:20px; }
-  .project .project-header{ padding-top:100px; }
+  .project-screen{
+    .main-header{ padding-top:20px; }
+    .project .project-header{ padding-top:100px; }
+  }
 }
 
 @media only screen
 and (max-width : 900px) {
   .project .project-content .text{ .columns(1, 0px); }
+  .main-header .inner{ .jcc; }
 }
 
 @media only screen
 and (max-width : 600px) {
-  .project-item{ padding:4%; margin:3%; }
+  .project-item{ padding:4%; margin:3% 0%; }
   .projects-list .cover{ height:140px; margin:20px; }
 }
 

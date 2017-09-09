@@ -4,6 +4,7 @@ html(lange="en")
 
   head
     include views/meta
+    +page-meta("Bernat Fortet Unanue")
     include views/head
 
 
@@ -11,7 +12,7 @@ html(lange="en")
     header.main-header.light
       .inner
         a.logo(href="./") Bernat Fortet Unanue
-        a.contact(href="mailto:contact@bernatfortet.com") Get in Touch
+        a.contact(href="mailto:contact@bernatfortet.com") Contact
 
 
     section.row.projects-list
@@ -27,16 +28,10 @@ html(lange="en")
 
       +project-item( '', 'Fantasy Soccer Games for TV Show', 'Game Direction - 2013', 'sendokai' )
       +project-item( '', 'Polar Platformer Game for TV Show', 'Game Direction - 2012', 'laland' )
-        //- +project-item( 'Desafio Champions', 'Web MMO RPG Action Soccer', 'Game Direction - 2012', 'desafio' )
-      //- .hr
+      +project-item( 'MSCED', 'Make Something Cool Everyday', 'Game Direction - 2012', 'msced', false )
+      +project-item( '', 'Brand & Website Designs for eSprots commentator Day9', 'Design - 2012', 'day9' )
 
-      //- .row
-      //-   +project-item-mini( 'Sendokai Champions', 'Soccer Runner', 'Game Direction - 2013', 'sendokai-champions' )
-      //-   +project-item-mini( 'Laland', 'Polar Platformer', 'Game Direction - 2012', 'laland' )
-      //-   +project-item-mini( 'Desafio Champions', 'Web MMO RPG Action Soccer', 'Game Direction - 2012', 'desafio-champions' )
 
-      //- .hr
-      //-
       //- .row
       //-   a.card.micro(href="msced.html")
       //-     .header(style="background-image:url(images/covers/msced.png); background-size:cover;")
