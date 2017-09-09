@@ -940,6 +940,10 @@ a:hover:hover {
   width: 100%;
   height: auto;
 }
+.project-item .logo-image,
+.project-header .logo-image {
+  margin: -10px 0 -20px 0;
+}
 .project-item .logo-image .logo-icon,
 .project-header .logo-image .logo-icon {
   height: 100px;
@@ -1060,37 +1064,43 @@ a:hover:hover {
   transition-duration: 850ms;
   transition-timing-function: ease-out;
 }
-.calmeet-gradient {
+.calmeet-background {
   background-image: linear-gradient(135deg, #FF3A3A 0%, #FF4C3A 20%, #FF4C3A 80%, #FF6D3A 100%);
 }
-.pillar-gradient {
+.pillar-background {
   background-image: linear-gradient(135deg, #5EDCFF 0%, #1BBEFF 20%, #0AA1FF 80%, #007CDB 100%);
 }
-.open-gradient {
+.open-background {
   background-image: linear-gradient(135deg, #4BB1FF 0%, #2886FF 20%, #2933FF 80%, #4F2AFF 100%);
 }
-.foxie-gradient {
+.foxie-background {
   background-image: linear-gradient(135deg, #FFE152 0%, #FFC624 20%, #FFB224 80%, #FF8D24 100%);
 }
-.mikey-gradient {
+.mikey-background {
   background-image: linear-gradient(135deg, #FF6400 0%, #FF8500 20%, #FFBD00 80%, #FFD300 100%);
 }
-.aviate-gradient {
+.aviate-background {
   background-image: linear-gradient(135deg, #280FA1 0%, #4D1FA6 20%, #8E21AC 80%, #AC219A 100%);
 }
-.broadway-gradient {
+.broadway-background {
   background-image: linear-gradient(135deg, #58636A 0%, #454955 20%, #181E32 80%, #0D0D3B 100%);
 }
-.presto-gradient {
+.presto-background {
   background-image: linear-gradient(135deg, #A7FFF4 0%, #28F4F2 20%, #1CBDEA 80%, #179FDB 100%);
 }
-.laland-gradient {
+.laland-background {
   background: url('/images/projects/laland/bkg.jpg') no-repeat center center;
   background-size: cover;
 }
-.sendokai-gradient {
+.sendokai-background {
   background: url('/images/projects/sendokai/bkg.jpg') no-repeat center center;
   background-size: cover;
+}
+.day9-background {
+  background: #ffa719;
+}
+.msced-background {
+  background: #EC5556;
 }
 .project {
   margin: 0 auto;
