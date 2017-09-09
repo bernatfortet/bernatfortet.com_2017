@@ -776,7 +776,7 @@ a:hover:hover {
   width: 100%;
   position: absolute;
   z-index: 100;
-  padding-top: 60px;
+  padding: 30px 0;
 }
 .main-header.light {
   background: white;
