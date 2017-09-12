@@ -896,7 +896,7 @@ a:hover:hover {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding-top: 90px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1278,6 +1278,12 @@ a:hover:hover {
   width: 500px;
   height: 320px;
   background-color: #11132D;
+}
+.project .project-content iframe {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  overflow: hidden;
 }
 .row {
   display: flex;
