@@ -1171,18 +1171,6 @@ a:hover:hover {
 .project .project-content .text {
   margin-bottom: 40px;
 }
-.project .project-content .text.columns {
-  -webkit-column-count: 2;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
-  /* Firefox */
-  column-count: 2;
-  -webkit-column-gap: 40px;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px;
-  /* Firefox */
-  column-gap: 40px;
-}
 .project .project-content .text .title {
   font-size: 42px;
   line-height: 1;
