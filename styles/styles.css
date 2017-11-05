@@ -1298,18 +1298,6 @@ a:hover:hover {
   }
 }
 @media only screen and (max-width: 900px) {
-  .project .project-content .text {
-    -webkit-column-count: 1;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 1;
-    /* Firefox */
-    column-count: 1;
-    -webkit-column-gap: 0px;
-    /* Chrome, Safari, Opera */
-    -moz-column-gap: 0px;
-    /* Firefox */
-    column-gap: 0px;
-  }
   .main-header .inner {
     -webkit-justify-content: center;
     -ms-justify-content: center;
