@@ -782,7 +782,7 @@ a:hover:hover {
   padding: 30px 0;
 }
 .main-header.light {
-  background: white;
+  background: transparent;
 }
 .main-header.light .logo {
   color: #11132D;
